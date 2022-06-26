@@ -8,15 +8,15 @@ int main()
     int randNumber = rand()%21;     //get the random and store it in an int variable
 
     printf(".......................................\n");
-    printf("Please guess a number between 0 and 20!\n");//ask user to guess the number
+    printf("Please guess a number between 0 and 20!\n");
     printf(".......................................\n");
     char userInput[99];
     int numOfGuesses = 1;
-    char* endPtr;
+   // char* endPtr;
 
 
     while(numOfGuesses < 11){
-    fgets(userInput, 99, stdin);
+    fgets(userInput, 99, stdin); //user input stored in userInput [99]
 
     int x = strtod(userInput,0);    //takes user input and changes it to int
     if(x < 1 || x > 20){printf("Number is not between 1 and 20!....\n");}
