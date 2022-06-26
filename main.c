@@ -1,5 +1,5 @@
 #include <stdio.h>      //Task:generate rand num from 0 - 20!,only accept nums from this range,
-#include <stdlib.h>     // tell the user if guess is high or low, win if guessed in 5 guesses!
+#include <stdlib.h>     // tell the user if guess is high or low, win if guessed in 10 guesses!
 #include <time.h>
 int main()
 {
@@ -31,19 +31,6 @@ int main()
     if(numOfGuesses==10){printf("The Random number is %d\n", randNumber);}
 
         numOfGuesses++;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     return 0;
 }
